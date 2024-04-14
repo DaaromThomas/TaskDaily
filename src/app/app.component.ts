@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'TaskDaily';
+  private loggingIn_: boolean = false;
+
+  public set loggingIn(value: boolean){
+    this.loggingIn_ = value;
+  }
+
+  public get loggingIn(): boolean{
+    return this.loggingIn_;
+  }
 }

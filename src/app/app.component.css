@@ -1,0 +1,30 @@
+/* App component */
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.navbar {
+    width: 5%;
+    transition: 0.3s;
+
+    /* TODO: Verwijder de kleur hieronder */
+    background-color: green;
+}
+
+.navbar:hover{
+    width: 10%;
+    
+    /* TODO: Verwijder de kleur hieronder */
+    background-color: blue;
+}
+
+.main {
+    flex: 1;
+
+    /* TODO: Verwijder de kleur hieronder */
+    background-color: red;
+}
+
+
