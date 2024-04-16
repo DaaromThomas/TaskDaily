@@ -2,6 +2,45 @@
     width: 100%;
     height: 100%;
 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    background-color: rgb(17 24 39);
+    border-left: solid rgb(31 41 55);
+
+}
+    
+.tips { 
+    grid-area: 1 / 1 / 3 / 2; 
+    padding: 20px;
+    color: rgb(156 163 175);
+}
+
+.tips .titel{
+    width: 100%;
+    text-align: center;
+
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.tips .tips-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.stats { 
+    grid-area: 1 / 2 / 2 / 3; 
+
     /* TODO: Verwijder de kleur hieronder */
     background-color: orange;
+}
+.div3 { 
+    grid-area: 2 / 2 / 3 / 3; 
+
+    /* TODO: Verwijder de kleur hieronder */
+    background-color: green;
 }
